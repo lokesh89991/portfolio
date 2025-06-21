@@ -1,0 +1,117 @@
+.app {
+  font-family: 'Inter', 'Helvetica Neue', Arial, 'sans-serif';
+  background: #181818;
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 10;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.navLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navLinks a:hover {
+  color: #61dafb;
+}
+.heroSection {
+  display: block;
+  min-height: 60vh;
+  padding: 4rem 1rem 2rem 1rem;
+  background: linear-gradient(90deg, #2c2c2c 0%, #6c6c6c 100%);
+}
+.heroText {
+  text-align: center;
+}
+.heroText h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.heroText p {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+.heroImage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutSection, .projectsSection, .contactSection {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.projectsGrid {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+}
+.footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+.aboutBio {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.85;
+  max-width: 950px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutBio p {
+  text-align: center;
+}
+
+.projectLink {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #61dafb;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.projectLink:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 900px) {
+  .aboutBio {
+    max-width: 98vw;
+    padding: 0 0.5rem;
+  }
+} 
